@@ -24,7 +24,7 @@ $ make update
 
 ## Usage
 
-Our Makefile allows to:
+Our project allows to:
 
 - Specify an assembly file for compiling with `./configure /path/to/file.s`
 - Compile and run the assembly in **real mode** with `make boot`
