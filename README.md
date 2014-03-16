@@ -54,8 +54,10 @@ $ make boot
 
 - rtc
 
+```
 $ ./configure src/rtc.s
 $ make boot
+```
 
 ### **protected mode** exercise
 
