@@ -1,19 +1,22 @@
 # CS630 on Qemu(a virtual machine) in Ubuntu
 
-- Author: Wu Zhangjin/falcon <wuzhangjin@gmail.com>
+- Author: Wu Zhangjin/Falcon <wuzhangjin@gmail.com> of [TinyLab.org](http://tinylab.org)
 - Update: 2008-09-16, 2014/03/16
 
 ## Prepare
 
-If you want to do the following exercise, PLEASE install qemu and some other
-relative tools in Ubuntu/Linux system.
+If want to do the following exercises, PLEASE install
+[Qemu](http://wiki.qemu.org/Main_Page) and some other related tools in
+Ubuntu/Linux system.
 
 ```
 $ sudo apt-get install qemu
 ```
 
-If want to do the exercise of CS630 in ubuntu with qemu, you need to execute
-the following command to mirror the resources in the course site to res/:
+If want to do the exercises of
+[CS630](http://www.cs.usfca.edu/~cruse/cs630f06/) on Qemu in Ubuntu, you need
+to execute the following command to mirror the resources in the course site to
+res/:
 
 ```
 $ make update
