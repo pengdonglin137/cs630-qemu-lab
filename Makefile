@@ -29,10 +29,10 @@ quickload.bin:
 update:
 	@wget -c -m -nH -np --cut-dirs=2 -P res/ $(CS630)
 
-boot:
+boot: clean boot.img
 	@bash qemu.sh boot
 
-pmboot: 
+pmboot: clean pmboot.img
 	@bash qemu.sh pmboot
 
 clean:
