@@ -24,29 +24,45 @@ $ make update
 
 ## Usage
 
-### "real mode" exercise
+Our Makefile allows to:
+
+- Specify an assembly file for compiling with `./configure /path/to/file.s`
+- Compile and run the assembly in **real mode** with `make boot`
+- Compile and run the assembly in **protected mode** with `make pmboot`
+
+For example, to compile the src/helloworld.s, we can configure it with:
+
+```
+$ ./configure src/helloworld.s
+```
+
+To compile the assembly files from res/, use rtcdemo.s as an example, just
+type:
+
+```
+$ ./configure res/rtcdemo.s
+```
+
+### **real mode** exercise
 
 - helloworld
 
 ```
 $ ./configure src/helloworld.s
-$ make
 $ make boot
 ```
 
 - rtc
 
 $ ./configure src/rtc.s
-$ make
 $ make boot
 
-### "protected mode" exercise
+### **protected mode** exercise
 
 - helloworld
 
 ```
 $ ./configure src/pmhello.s
-$ make
 $ make pmboot
 ```
 
@@ -54,7 +70,6 @@ $ make pmboot
 
 ```
 $ ./configure src/pmrtc.s
-$ make
 $ make pmboot
 ```
 
